@@ -74,9 +74,9 @@ h4 {
 }
 
 img {
-  width: auto;
-  height: auto; 
-  border-radius: 50px;
+    width: 300px;
+    height: 225px; 
+    border-radius: 20px;
 }
 
 .social-icons{
@@ -87,7 +87,8 @@ img {
 }
 
 .social-icon{
-    width: 20px;
+    width: 15px;
+    height: 15px;
 }
 
 
