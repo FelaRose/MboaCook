@@ -1,8 +1,8 @@
 
 header {
+  position: sticky; /*fix header on top while scrolling*/
   margin-top: 0;
   top:0;
-  position: sticky; /*fix header on top while scrolling*/
   padding:5px;
   background: rgb(0, 100, 0);
   color:rgb(255, 0, 0);
@@ -10,17 +10,19 @@ header {
 }
 
 body {
-  margin-top: 0; /*close the white space/gap before header start */
-  margin-bottom: 0; /*close the white space/gap after footer end */
-  /*padding-top:10px;
-  padding-bottom:10px;*/
+  margin-top: 0px; /*close the white space/gap before header start */
+  margin-bottom: 0px; /*close the white space/gap after footer end */
+  padding-top:0px;
+  padding-bottom:0px;
   text-align: center;
 }
 
 footer {
-  position: sticky;
-  bottom:0;
-  padding:5px;
+  position: sticky; /*fix footer at bottom while scrolling*/
+  bottom:0; /* keep space between bottom and footer = 0 */
+  margin-top: 10px; /* Create space between Body and footer */
+  margin-bottom: 0px; /* left no space after footer */
+  padding:5px; /* Make footer a bit fat */
   background: rgb(0, 100, 0);
   color:rgb(255, 0, 0);
   text-align: center;
@@ -48,9 +50,15 @@ a:hover {
     text-decoration: overline;
 }
 
+h1 {
+  margin-top: 0px; /* Remove any space before title */
+  margin-bottom: 0px; /* Remove any space after title */
+  text-align: center;
+}
+
 h2 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0px; /* Remove any space before title */
+  margin-bottom: 0px; /* Remove any space after title */
   text-align: center;
 }
 
@@ -91,12 +99,10 @@ img {
     height: 15px;
 }
 
-
-
 .kontaktBtn{
     color: white;
-    background-color: chocolate; 
-    padding: 8px 8px;
+    background-color: green; 
+    padding: 5px 5px;
     display: inline-block;
     border-radius: 8px;
     /*margin-top: 16px;
@@ -110,7 +116,7 @@ img {
 
 .kontaktBtn:hover{
     text-decoration: none;
-    background-color: rgb(146, 37, 52);
+    background-color: chocolate;
 }
 
 .button-icon{
